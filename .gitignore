@@ -1,0 +1,25 @@
+# Exclude the migrations directory
+/migrations/
+
+# Exclude the virtual environment directory (replace "env" with the actual name of your virtual environment directory if it's different)
+/env/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+/env/
+/.venv/
+
+# Ignore migrations
+/migrations/
+
+# Ignore secret key
+.secret_key
+
+# Ignore settings file
+/settings.ini
+
+# Ignore .vscode settings
+.vscode/
