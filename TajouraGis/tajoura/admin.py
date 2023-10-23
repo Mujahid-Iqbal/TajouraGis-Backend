@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser
+from .models import CustomUser,AcademicLevel,School
 
 class CustomUserAdmin(UserAdmin):
     # List the fields you want to display in the admin list view
@@ -12,4 +12,6 @@ class CustomUserAdmin(UserAdmin):
 
 # Register your custom user model with the custom admin class
 admin.site.register(CustomUser, CustomUserAdmin)
+admin.site.register(School)
+admin.site.register(AcademicLevel)
 
